@@ -9,39 +9,49 @@
 
     <div id="container">
         <div id="header">
-            <title>formulaire</title>
+            <title>formulaires</title>
 </head>
 
 <body>
 
-    <form id="form">
+    <form method="post" id="form">
 
         <h1>Formulaire</h1>
-        <div class="content" id="genre">
+        <div class="content">
 
-            <p>sexe :</p>
+
+            <label for="sexe">sexe</label>
             <input type="radio" name="genre" value="homme">homme
             <input type="radio" name="genre" value="femme">femme<br>
 
-
-
-            <div class="content" id="form" >
-                <label> : <input  type="text" id="form" placeholder="Murray" required><br>
-                Prénom :<input type="text" placeholder="Bill" required><br>
-            </label>
-                <label for="number" id="number-label">
-                    Âge : <input type="" id="number" placeholder="69"><br>
-                </label>
-            </div>
-           
-           
-
-
-            <label for="number" id="number-label">
-                Mot de passe : <input type="password" placeholder=""><br>
-                <label for="number" id="number-label">
-                    Mot de passe (confirmation) : <input type="password" placeholder=""><br>
         </div>
+
+            <div class="content" id="form">
+
+                <label for='Nom'>Nom :</label>
+                <input type="text" name="nom" id="nom" placeholder="Murray" required>
+                <span id="missnom"></span>
+
+                <label for='prenom'>Prénom :</label>
+                <input type="text" name="prenom" id="prenom" placeholder="Bill" required><br>
+                <span id="missPrenom"></span>
+
+                <label for="age">Âge</label>
+                <input type="age" name="age" id="age" placeholder="69" required><br>
+
+            </div>
+
+
+
+
+            <label for="password">Mot de passe :</label>
+            <input type="password" name="password" id="password" placeholder=""><br>
+
+            <label for="password-confirmation"> Mot de passe (confirmation) : </label>
+            <input type="password" name="password-confirmation" placeholder=""><br>
+        </div>
+
+
         <div class="content">
             <div class="content">
                 <p>Pays :</p>
@@ -56,7 +66,7 @@
                 <input type="checkbox" name="" id="">Je désire recevoir la newsletter chaque mois.<br>
             </div>
             <div id="button" class="content">
-                <button id="submit">M'inscrire</button>
+                <button type="submit" value="Valider" id="bouton_envoi">M'inscrire</button>
                 <button id="submit">Réinitialiser le formulaire</button>
             </div>
         </div>
