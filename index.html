@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>TP JS Formulaire</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="container">
+    <form action="" id="form">
+        <div class="form-element">
+            <input type="radio" name="sexe-input" id="sexe-input-homme" value="Homme" class="input">
+            <label for="sexe-input-homme">Homme</label>
+            <input type="radio" name="sexe-input" id="sexe-input-femme" value="Femme" class="input">
+            <label for="sexe-input-femme">Femme</label>
+            <span id="sexe-span" class="alert-span"></span>
+        </div>
+        <div class="form-element">
+            <label for="nom-input">Nom : </label>
+            <input type="text" id="nom-input" class="input">
+            <span id="nom-span" class="alert-span"></span>
+        </div>
+        <div class="form-element">
+            <label for="prenom-input">Prénom : </label>
+            <input type="text" id="prenom-input" class="input">
+            <span id="prenom-span" class="alert-span"></span>
+        </div>
+        <div class="form-element">
+            <label for="age-input">Âge : </label>
+            <input type="number" id="age-input" min="5" max="140" class="input">
+            <span id="age-span" class="alert-span"></span>
+        </div>
+        <div class="form-element">
+            <label for="pseudo-input">Pseudo : </label>
+            <input type="text" id="pseudo-input" class="input">
+            <span id="pseudo-span" class="alert-span"></span>
+        </div>
+        <div class="form-element">
+            <label for="mdp-input">Mot de passe : </label>
+            <input type="password" id="mdp-input" class="input">
+            <span id="mdp-span" class="alert-span"></span>
+        </div>
+        <div class="form-element">
+            <label for="mdp2-input">Mot de passe (confirmation) : </label>
+            <input type="password" id="mdp2-input" class="input">
+            <span id="mdp2-span" class="alert-span"></span>
+        </div>
+        <div class="form-element">
+            <label for="pays-input">Pays : </label>
+            <select name="pays-input" id="pays-input" class="input">
+                <option value=""></option>
+                <option value="france">France</option>
+                <option value="etats-unis">Etats-Unis</option>
+                <option value="chine">Chine</option>
+                <option value="japon">Japon</option>
+            </select>
+            <span id="pays-span" class="alert-span"></span>
+        </div>
+        <div class="form-element">
+            <input type="checkbox" id="newsletter-input" checked>
+            <label for="newsletter-input">Je souhaite recevoir la newsletter</label>
+        </div>
+        <br><input type="submit" onclick="sendForm()" value="Envoyer">
+        <input type="reset" value="Reset" onclick="resetForm()">
+    </form>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
